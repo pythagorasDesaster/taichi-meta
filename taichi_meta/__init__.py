@@ -3,7 +3,7 @@ from   collections import OrderedDict
 
 import taichi as ti
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __author__ = 'Thomas Kirchner'
 
 class MetaKernelLoader:

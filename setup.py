@@ -1,9 +1,15 @@
 from setuptools import setup
 
+from pathlib import Path
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.md").read_text()
+
 setup(
     name='taichi-meta',
-    version='0.1.0',
+    version='0.1.1',
     description='A Simple Taichi Addon that allows you to compile AND recompile kernels directly from strings.',
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     url='https://github.com/pythagorasDesaster/taichi-meta',
     author='Thomas Kirchner',
     author_email='thomas.kirchner5@web.de',
